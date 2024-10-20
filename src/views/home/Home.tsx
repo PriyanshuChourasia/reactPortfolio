@@ -1,9 +1,10 @@
 import { WrapperContainer } from "../../constants/containers/wrapper/WrapperContainer"
+import HomePage from "../../features/HomePage"
 
 const Home = () => {
   return (
     <WrapperContainer>
-      <p>Home</p>
+      <HomePage/>
     </WrapperContainer>
   )
 }

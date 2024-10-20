@@ -12,6 +12,9 @@ const BlogPage  = lazy(()=> import("../views/blog/Blog"));
 
 
 export const navigationRoute:IAppRouteInterface[] = [
+    /**
+     * Routes of SPA
+     */
     {
         path:"/",
         element:<HomePage/>,
