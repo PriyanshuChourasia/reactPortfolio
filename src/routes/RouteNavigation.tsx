@@ -1,12 +1,12 @@
 import { lazy } from "react";
-import { IAppRouteInterface } from "../interfaces/RouteInterface/AppRouteInterface";
-import { AppIcon } from "../constants/Icons/AppIcons";
+import { AppIcon } from "@/constants/Icons/AppIcons";
+import { IAppRouteInterface } from "@/interfaces/RouteInterface/AppRouteInterface";
 
 
 
-const HomePage = lazy(()=> import("../views/home/Home"));
-const AboutPage = lazy(()=> import('../views/about/About'));
-const BlogPage  = lazy(()=> import("../views/blog/Blog"));
+const HomePage = lazy(()=> import("@/views/home/Home"));
+const AboutPage = lazy(()=> import('@/views/about/About'));
+const BlogPage  = lazy(()=> import("@/views/blog/Blog"));
 
 
 

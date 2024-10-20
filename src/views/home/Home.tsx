@@ -1,5 +1,5 @@
-import { WrapperContainer } from "../../constants/containers/wrapper/WrapperContainer"
-import HomePage from "../../features/HomePage"
+import { WrapperContainer } from "@/constants/containers/wrapper/WrapperContainer";
+import HomePage from "@/features/HomePage";
 
 const Home = () => {
   return (
