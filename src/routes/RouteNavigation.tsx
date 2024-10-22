@@ -7,6 +7,7 @@ import { IAppRouteInterface } from "@/interfaces/RouteInterface/AppRouteInterfac
 const HomePage = lazy(()=> import("@/views/home/Home"));
 const AboutPage = lazy(()=> import('@/views/about/About'));
 const BlogPage  = lazy(()=> import("@/views/blog/Blog"));
+const MainLayout = lazy(()=> import("@/views/layout/main"));
 
 
 
@@ -17,23 +18,34 @@ export const navigationRoute:IAppRouteInterface[] = [
      */
     {
         path:"/",
-        element:<HomePage/>,
+        element:<MainLayout/>,
         errorElement:<div>Error</div>,
         isHeader:true,
-        icon: AppIcon.homeIcon
+        icon: AppIcon.homeIcon,
+        children:[
+            {
+                path:"/",
+                element:<HomePage/>,
+                errorElement:<div>Error</div>,
+                isHeader:true,
+                icon: AppIcon.homeIcon
+            },
+            {
+                path:"about",
+                element:<AboutPage/>,
+                errorElement:<div>Error</div>,
+                isHeader:true,
+                icon: AppIcon.aboutIcon
+            },
+            {
+                path:"blog",
+                element:<BlogPage/>,
+                errorElement:<div>Error</div>,
+                isHeader:true,
+                icon:AppIcon.blogIcon
+            }
+        ]
     },
-    {
-        path:"/about",
-        element:<AboutPage/>,
-        errorElement:<div>Error</div>,
-        isHeader:true,
-        icon: AppIcon.aboutIcon
-    },
-    {
-        path:"/blog",
-        element:<BlogPage/>,
-        errorElement:<div>Error</div>,
-        isHeader:true,
-        icon:AppIcon.blogIcon
-    }
+
+
 ];

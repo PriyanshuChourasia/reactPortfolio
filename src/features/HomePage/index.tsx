@@ -1,8 +1,9 @@
+import IntroBlock from "./compnents/IntroBlock"
 
 const HomePage = () => {
   return (
     <>
-      <p>Home</p>
+      <IntroBlock/>
     </>
   )
 }

@@ -1,11 +1,11 @@
-import { WrapperContainer } from "@/constants/containers/wrapper/WrapperContainer";
+import { Container } from "@/constants/containers/wrapper/Container";
 import HomePage from "@/features/HomePage";
 
 const Home = () => {
   return (
-    <WrapperContainer>
+    <Container>
       <HomePage/>
-    </WrapperContainer>
+    </Container>
   )
 }
 
