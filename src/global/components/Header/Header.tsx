@@ -16,7 +16,7 @@ const Header = () => {
            }) 
         })
       }
-      <h1>Header</h1>
+      <h1 className="text-3xl text-black">Header</h1>
     </HeaderWrapper>
   )
 }

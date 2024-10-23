@@ -1,0 +1,17 @@
+@tailwind components;
+
+
+
+.imageBg{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   background-image: linear-gradient(45deg, rgba(123, 123, 123, 0.638),rgba(123, 123, 123, 0.638)), url('../../../assets/profileBg.jpg');
+}
